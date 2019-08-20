@@ -132,7 +132,7 @@ class AsyncAPDS9306 {
   public:
     AsyncAPDS9306();
 
-    bool begin(APDS9306_ALS_GAIN_t again = APDS9306_ALS_GAIN_1, APDS9306_ALS_MEAS_RES_t atime = APDS9306_ALS_MEAS_RES_16BIT_25MS);
+    bool begin(APDS9306_ALS_GAIN_t again, APDS9306_ALS_MEAS_RES_t atime);
 
     AsyncAPDS9306Data syncLuminosityMeasurement();
 
